@@ -1,0 +1,25 @@
+function foo(k,v)
+{
+    console.log(k, v);
+}
+
+var myArray = {"Berdan":21600904, "Omer":21100999, "Eylul":21602019, "Serhat":21704354, "Gunes":21602271, "Furkan":21500123}; // Initialize 
+console.log(myArray["Eylul"]); // Get the value for a given key
+
+myArray["Etga"] = 21704567; // Add a new element 
+console.log(myArray);
+
+delete myArray.Serhat; // Remove an element
+console.log(myArray);
+
+myArray["Eylul"] = 21894459; // Modify the value of an existing element 
+console.log(myArray);
+
+console.log("Eylul" in myArray); // Search for the existence of a key 
+console.log("Serhat" in myArray); // Search for the existence of a key 
+
+console.log(Object.values(myArray).includes(21600904)); // Search for the existence of a value 
+console.log(Object.values(myArray).includes(21908753)); // Search for the existence of a value 
+
+for(var x in myArray)
+    foo(x, myArray[x]);
