@@ -1,0 +1,10 @@
+var number = 30;
+var assumption;
+var tries = 0;
+do {
+  assumption = Math.floor(Math.random() * 100);
+  tries++;
+  console.log(assumption);
+}
+while (assumption != number); 
+console.log(tries, " tries");
